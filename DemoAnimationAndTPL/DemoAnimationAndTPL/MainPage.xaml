@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoAnimationAndTPL.MainPage">
+    <Grid ColumnDefinitions="auto, *">
+        <StackLayout Grid.Column="0">
+            <Button Text="Rotate" Clicked="OnRotateAnimation" />
+            <Button Text="Scale" Clicked="OnScaleAnimation" />
+            <Button Text="ScaleAndRotate" Clicked="OnScaleAndRotateAnimation" />
+            <Button Text="TranslateAndRotate" Clicked="OnTranslateAndRotate" />
+            <Button Text="ScaleAndFade" Clicked="OnScaleAndFade" />
+        </StackLayout>
+        <Label x:Name="animatedLabel"
+               Grid.Column="1"
+               TextColor="Blue"
+               Text="Xamarin"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="Large" />
+    </Grid>
+</ContentPage>
